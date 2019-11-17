@@ -22,8 +22,16 @@ register(
 
 register(
     id='VizdoomHealthGathering-v0',
-    entry_point='vizdoomgym.envs:VizdoomHealthGathering'
+    entry_point='vizdoomgym.envs:VizdoomHealthGathering',
+    kwargs = {'version': 0}
 )
+
+register(
+    id='VizdoomHealthGathering-v1',
+    entry_point='vizdoomgym.envs:VizdoomHealthGathering',
+    kwargs = {'version': 1}
+)
+
 
 register(
     id='VizdoomMyWayHome-v0',
@@ -47,5 +55,18 @@ register(
 
 register(
     id='VizdoomHealthGatheringSupreme-v0',
-    entry_point='vizdoomgym.envs:VizdoomHealthGatheringSupreme'
+    entry_point='vizdoomgym.envs:VizdoomHealthGatheringSupreme',
+    kwargs = {'version': 0}
+)
+
+register(
+    id='VizdoomHealthGatheringSupreme-v2',
+    entry_point='vizdoomgym.envs:VizdoomHealthGatheringSupreme',
+    kwargs = {'version': 2}
+)
+
+register(
+    id='VizdoomHealthGatheringSupreme-v3',
+    entry_point='vizdoomgym.envs:VizdoomHealthGatheringSupreme',
+    kwargs = {'version': 3}
 )
